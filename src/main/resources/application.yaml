@@ -1,0 +1,19 @@
+spring:
+  application:
+   name: tredence
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecommerce
+    username: root
+    password: Manoj@1993
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      ddl-auto: update
+
+server:
+  port: 9090
+
